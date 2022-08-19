@@ -21,7 +21,6 @@ $(document).ready(function () {
     $("#hour16 .description").val(localStorage.getItem("hour4"));
     $("#hour17 .description").val(localStorage.getItem("hour5"));
 
-                    //This function applies the nested function to every element with the time-block class to determine how the webpage should change given the current time.
     function timeTracker() { //This function determines how the web page interacts given the users current time.
        $(".time-block").each(function() { //This function is applied to every element with the time-block class and then changes the color of the input box depending on wheter or not that time is in the future, past, or present.
             let blockHour = parseInt($(this).attr("id").split("hour")[1]);
